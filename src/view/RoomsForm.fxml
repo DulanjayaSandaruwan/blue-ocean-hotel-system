@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RoomsController">
+   <children>
+      <AnchorPane fx:id="root" layoutX="-2.0" prefHeight="500.0" prefWidth="169.0" style="-fx-background-color: #080323;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="152.0" layoutX="9.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/WhatsApp_Image_2021-06-30_at_18.41.22-removebg.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="55.0" layoutY="439.0" onMouseClicked="#lblBackOnMouseClicked" prefHeight="27.0" prefWidth="90.0" text="Back " textFill="WHITE" underline="true">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TextField layoutX="310.0" layoutY="14.0" prefHeight="47.0" prefWidth="215.0" style="-fx-background-color: #000000;" />
+      <TextField layoutX="313.0" layoutY="17.0" prefHeight="41.0" prefWidth="208.0" style="-fx-background-color: #227FEC;" />
+      <Text layoutX="354.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ROOMS" wrappingWidth="151.99999791383743">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <TextField layoutX="174.0" layoutY="110.0" prefHeight="27.0" prefWidth="161.0" />
+      <TextField layoutX="351.0" layoutY="112.0" prefHeight="27.0" prefWidth="161.0" />
+      <Label layoutX="176.0" layoutY="87.0" prefHeight="27.0" prefWidth="139.0" text="Add New Room">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="355.0" layoutY="87.0" prefHeight="27.0" prefWidth="139.0" text="Modify Room">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblRooms" layoutX="194.0" layoutY="147.0" prefHeight="311.0" prefWidth="512.0">
+        <columns>
+          <TableColumn fx:id="colNewRoomID" prefWidth="256.0" text="New Room ID" />
+          <TableColumn fx:id="colModifyingRoomID" prefWidth="255.0" text="Modifying Room ID" />
+        </columns>
+      </TableView>
+      <Button layoutX="555.0" layoutY="101.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="131.0" style="-fx-background-color: #ff0000;" text="Delete Room" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Label layoutX="492.0" layoutY="478.0" prefHeight="17.0" prefWidth="208.0" text="Designed By : Dulanjaya Sandaruwan" />
+   </children>
+</AnchorPane>

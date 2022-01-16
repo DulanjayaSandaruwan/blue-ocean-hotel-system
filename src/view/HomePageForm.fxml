@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomePageFormController">
+   <children>
+      <AnchorPane prefHeight="136.0" prefWidth="700.0" style="-fx-background-color: #080323;">
+         <children>
+            <ImageView fitHeight="126.0" fitWidth="152.0" layoutX="2.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/WhatsApp_Image_2021-06-30_at_18.41.22-removebg.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="52.0" fitWidth="83.0" layoutX="553.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/OIP__4_-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="610.0" layoutY="45.0" prefHeight="32.0" prefWidth="97.0" text="Settings" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="136.0" prefHeight="364.0" prefWidth="152.0" style="-fx-background-color: #227FEC;">
+         <children>
+            <Button layoutX="12.0" layoutY="17.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="133.0" style="-fx-background-color: #001AFF;" text="Rooms" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Button>
+            <Button layoutX="11.0" layoutY="67.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="133.0" style="-fx-background-color: #001AFF;" text="Meal Package" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+            <Button layoutX="12.0" layoutY="117.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="133.0" style="-fx-background-color: #001AFF;" text="Income Reports" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+            <Button layoutX="10.0" layoutY="164.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="133.0" style="-fx-background-color: #001AFF;" text="Reserve a room" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Button>
+            <Button layoutX="10.0" layoutY="211.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="133.0" style="-fx-background-color: #001AFF;" text="Mark rooms in maintenance" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+            <ImageView fitHeight="70.0" fitWidth="72.0" layoutX="39.0" layoutY="267.0" onMouseClicked="#btnExitOnMouseClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/exit_PNG29-removebg-preview.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label layoutX="61.0" layoutY="335.0" prefHeight="17.0" prefWidth="70.0" text="Exit">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <TextField layoutX="282.0" layoutY="117.0" prefHeight="52.0" prefWidth="244.0" style="-fx-background-color: #000000;" />
+      <TextField layoutX="290.0" layoutY="122.0" prefHeight="41.0" prefWidth="229.0" style="-fx-background-color: #227FEC;" />
+      <Text layoutX="345.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HOME PAGE" wrappingWidth="161.13671875">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Button layoutX="168.0" layoutY="198.0" mnemonicParsing="false" onAction="#btnRoomsOnAction" prefHeight="107.0" prefWidth="161.0" style="-fx-background-color: #227FEC;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="350.0" layoutY="198.0" mnemonicParsing="false" onAction="#btnMealsPackageOnAction" prefHeight="107.0" prefWidth="161.0" style="-fx-background-color: #227FEC;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="532.0" layoutY="197.0" mnemonicParsing="false" onAction="#btnIncomeReportsOn" prefHeight="107.0" prefWidth="161.0" style="-fx-background-color: #227FEC;">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="168.0" layoutY="324.0" mnemonicParsing="false" onAction="#btnReserveAroom" prefHeight="107.0" prefWidth="250.0" style="-fx-background-color: #227FEC;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="436.0" layoutY="324.0" mnemonicParsing="false" onAction="#btnMarkRoomsInMaintenance" prefHeight="107.0" prefWidth="257.0" style="-fx-background-color: #227FEC;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label layoutX="507.0" layoutY="479.0" prefHeight="17.0" prefWidth="198.0" text="Designed By: Dulanjaya Sandaruwan" />
+      <ImageView fitHeight="70.0" fitWidth="133.0" layoutX="214.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/OIP__2_-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="205.0" layoutY="252.0" prefHeight="53.0" prefWidth="97.0" text="ROOMS">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="70.0" fitWidth="97.0" layoutX="391.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/OIP-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="375.0" layoutY="265.0" prefHeight="27.0" prefWidth="112.0" text="Meal Package">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="59.0" fitWidth="54.0" layoutX="590.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/OIP__1_-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="550.0" layoutY="270.0" prefHeight="17.0" prefWidth="125.0" text="Income Reports">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="93.0" fitWidth="104.0" layoutX="171.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/OIP__3_-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="270.0" layoutY="348.0" prefHeight="27.0" prefWidth="125.0" text="Reserve">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label layoutX="268.0" layoutY="390.0" prefHeight="32.0" prefWidth="112.0" text="A Room">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="93.0" fitWidth="103.0" layoutX="440.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/R-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="551.0" layoutY="340.0" prefHeight="27.0" prefWidth="125.0" text="Mark Rooms">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="551.0" layoutY="382.0" prefHeight="27.0" prefWidth="125.0" text="In Maintenance">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
